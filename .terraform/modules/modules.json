@@ -1,1 +1,0 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"lightstep_gcp_compute_alerts","Source":"./modules/compute-alerts","Dir":"modules/compute-alerts"},{"Key":"lightstep_gcp_storage_alerts","Source":"./modules/storage-alerts","Dir":"modules/storage-alerts"}]}
