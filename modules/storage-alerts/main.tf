@@ -39,7 +39,7 @@ resource "lightstep_metric_condition" "gcp_storage_failed_reqs" {
 
 
     group_by {
-      aggregation_method = "count"
+      aggregation_method = "delta"
       keys               = ["resource_type"]
     }
   }
