@@ -26,7 +26,7 @@ resource "lightstep_metric_condition" "gcp_storage_failed_reqs" {
   metric_query {
     metric              = "storage.googleapis.com/api/request_count"
     query_name          = "a"
-    timeseries_operator = "count"
+    timeseries_operator = "delta"
     hidden              = false
     display             = "line"
     exclude_filters = [
@@ -39,7 +39,7 @@ resource "lightstep_metric_condition" "gcp_storage_failed_reqs" {
 
 
     group_by {
-      aggregation_method = "delta"
+      aggregation_method = "count"
       keys               = ["resource_type"]
     }
   }
